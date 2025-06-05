@@ -1,0 +1,209 @@
+{
+    "Task 1": {
+        "Task Description": "The user is planning an upcoming weekend getaway and needs assistance finding suitable activities, restaurants, and accommodations that cater to their preferences. The assistant should recommend local attractions, events, restaurants with the user's preferred cuisine and ambiance, and hotels aligned with their desired amenities, location, and room type preferences.",
+        "User Intent": "Plan a weekend getaway by finding activities, restaurants, and accommodations that match your interests and preferences for attractions, cuisine, ambiance, hotel amenities, location, and room types.",
+        "Task Goal": "The user receives a comprehensive itinerary for their weekend getaway, including recommended activities, restaurant reservations, and hotel bookings that align with their preferences.",
+        "Relevant Domains": [
+            "Events",
+            "Restaurants",
+            "Hotels",
+            "Travel"
+        ],
+        "Relevant Affinity Types": [
+            "Event Type Preference",
+            "Cuisine Preference",
+            "Ambiance Preference",
+            "Amenity Preference",
+            "Location Preference",
+            "Room Type Preference",
+            "Preferred Destination Types"
+        ],
+        "task_id": "MD-task-1",
+        "situations": {
+            "Location": "New England (e.g., Boston, Massachusetts)",
+            "Device": "Laptop",
+            "Time of Day": "Morning",
+            "Day of the Week": "Wednesday",
+            "Environment": "Quiet"
+        }
+    },
+    "Task 2": {
+        "Task Description": "The user is interested in exploring new music and attending concerts or music festivals. They need assistance discovering new artists, songs, and albums based on their preferred genres and favorite bands. Additionally, the assistant should provide recommendations for upcoming music events and concerts that align with the user's music preferences and location.",
+        "User Intent": "Discover new music and artists based on your favorite genres and bands, and find upcoming concerts or music festivals that match your interests and location.",
+        "Task Goal": "The user discovers new music and artists that align with their preferences, and receives a list of recommended music events or concerts to attend based on their location and music interests.",
+        "Relevant Domains": [
+            "Music",
+            "Events"
+        ],
+        "Relevant Affinity Types": [
+            "Preferred Genres",
+            "Favorite Bands",
+            "Preferred Audio Quality",
+            "Event Type Preference",
+            "Location Preference"
+        ],
+        "task_id": "MD-task-3",
+        "situations": {
+            "Location": "Boston, Massachusetts",
+            "Device": "Tablet",
+            "Time of Day": "Evening",
+            "Day of the Week": "Saturday",
+            "Environment": "Quiet"
+        }
+    },
+    "Task 3": {
+        "Task Description": "The user needs to book a service appointment, such as a haircut, dental cleaning, or doctor visit, and wants to find a provider that meets their preferences for location, service type, appointment time, and service provider gender.",
+        "User Intent": "Book an appointment for a service like a haircut, dental cleaning, or doctor visit, considering your preferences for location, service type, appointment time, and the service provider's gender.",
+        "Task Goal": "The user successfully books a service appointment with a provider that aligns with their preferences for location, service type, appointment time, and service provider gender.",
+        "Relevant Domains": [
+            "Services",
+            "Calendar"
+        ],
+        "Relevant Affinity Types": [
+            "Preferred Service Provider Types",
+            "Appointment Time Preference",
+            "Location Preference",
+            "Service Provider Gender Preference",
+            "Event Type Preference",
+            "Notification Preference"
+        ],
+        "task_id": "MD-task-5",
+        "situations": {
+            "Location": "Albuquerque, New Mexico",
+            "Device": "Tablet",
+            "Time of Day": "Morning",
+            "Day of the Week": "Tuesday",
+            "Environment": "Quiet"
+        }
+    },
+    "Task 4": {
+        "Task Description": "The user wants to create a shopping itinerary that includes visiting multiple stores, dining options, and entertainment venues within a shopping complex.",
+        "User Intent": "Plan your shopping day with store visits, dining options, and entertainment activities at the mall.",
+        "Task Goal": "The user creates a structured shopping schedule with appropriate timing for store visits, meals, and entertainment activities.",
+        "Relevant Domains": [
+            "Shopping",
+            "Restaurants",
+            "Events",
+            "Calendar"
+        ],
+        "Relevant Affinity Types": [
+            "Preferred Product Category",
+            "Brand Preference",
+            "Cuisine Preference",
+            "Price Range",
+            "Event Type Preference"
+        ],
+        "task_id": "MD-task-15",
+        "situations": {
+            "Location": "Nashville, Tennessee",
+            "Device": "Tablet",
+            "Time of Day": "Morning",
+            "Day of the Week": "Saturday",
+            "Environment": "Quiet"
+        }
+    },
+    "Task 5": {
+        "Task Description": "The user seeks to plan a music-themed evening including purchasing concert tickets, arranging dinner at a venue with live music, and creating a playlist for the car ride.",
+        "User Intent": "Organize a music-themed evening with concert tickets, dinner at a live music venue, and a travel playlist.",
+        "Task Goal": "The user successfully books concert tickets, reserves dinner at an appropriate venue, and creates a coordinated playlist for transportation.",
+        "Relevant Domains": [
+            "Music",
+            "Events",
+            "Restaurants",
+            "Calendar"
+        ],
+        "Relevant Affinity Types": [
+            "Preferred Genres",
+            "Favorite Artists",
+            "Event Type Preference",
+            "Cuisine Preference",
+            "Platform Preference"
+        ],
+        "task_id": "MD-task-16",
+        "situations": {
+            "Location": "Nashville, Tennessee",
+            "Device": "Laptop",
+            "Time of Day": "Evening",
+            "Day of the Week": "Saturday",
+            "Environment": "Quiet"
+        }
+    },
+    "Task 6": {
+        "Task Description": "The user needs to plan a family movie night including selecting age-appropriate content, ordering dinner delivery, and coordinating viewing schedules across multiple household members.",
+        "User Intent": "Arrange a family movie night with appropriate content selection, dinner delivery, and coordinated viewing schedules.",
+        "Task Goal": "The user successfully selects suitable content, arranges meal delivery, and coordinates viewing time that accommodates all family members.",
+        "Relevant Domains": [
+            "Media",
+            "Movies",
+            "Restaurants",
+            "Calendar"
+        ],
+        "Relevant Affinity Types": [
+            "Preferred Genres",
+            "Theater Type Preference",
+            "Cuisine Preference",
+            "Viewing Time Preference",
+            "Price Range"
+        ],
+        "task_id": "MD-task-18",
+        "situations": {
+            "Location": "Tucson, Arizona",
+            "Device": "Laptop",
+            "Time of Day": "Evening",
+            "Day of the Week": "Saturday",
+            "Environment": "Quiet"
+        }
+    },
+    "Task 7": {
+        "Task Description": "The user is planning a book club meeting and needs help selecting books, scheduling the meeting, and finding a suitable restaurant venue. The assistant should consider their literary preferences and dining requirements.",
+        "User Intent": "Organize a book club meeting by selecting books, scheduling the event, and finding a restaurant venue.",
+        "Task Goal": "The user successfully chooses books, schedules the meeting, and reserves a restaurant that accommodates the group's needs.",
+        "Relevant Domains": [
+            "Books",
+            "Calendar",
+            "Restaurants"
+        ],
+        "Relevant Affinity Types": [
+            "Genre",
+            "Reading Format",
+            "Event Type Preference",
+            "Cuisine Preference",
+            "Ambiance Preference",
+            "Group Size Preference"
+        ],
+        "task_id": "MD-task-21",
+        "situations": {
+            "Location": "Boston, Massachusetts",
+            "Device": "Laptop",
+            "Time of Day": "Afternoon",
+            "Day of the Week": "Saturday",
+            "Environment": "Quiet"
+        }
+    },
+    "Task 8": {
+        "Task Description": "The user needs to plan a romantic date night, including finding a movie or event, booking a restaurant, and creating a custom music playlist for the evening. The assistant should consider entertainment preferences, dining preferences, and music tastes.",
+        "User Intent": "Plan a romantic evening with entertainment, dinner, and a custom music playlist.",
+        "Task Goal": "The user successfully arranges all components of the date night according to preferences.",
+        "Relevant Domains": [
+            "Movies",
+            "Restaurants",
+            "Music",
+            "Events"
+        ],
+        "Relevant Affinity Types": [
+            "Preferred Genres",
+            "Cuisine Preference",
+            "Preferred Genres (Music)",
+            "Ambiance Preference",
+            "Event Type Preference"
+        ],
+        "task_id": "MD-task-25",
+        "situations": {
+            "Location": "Boston, Massachusetts",
+            "Device": "Tablet",
+            "Time of Day": "Evening",
+            "Day of the Week": "Saturday",
+            "Environment": "Quiet"
+        }
+    }
+}

@@ -1,0 +1,1988 @@
+[
+    {
+        "domain": "Alarm",
+        "description": "Manage alarms by allowing users to set and get alarms according to their preferences.",
+        "tasks": [
+            {
+                "name": "GetAlarm",
+                "description": "Retrieve the current alarms set by the user."
+            },
+            {
+                "name": "AddAlarm",
+                "description": "Add a new alarm based on user preferences."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Alarm Time Preference",
+                "description": "The time of day the user prefers their alarms to ring.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "12:00 AM",
+                    "12:30 AM",
+                    "1:00 AM",
+                    "1:30 AM",
+                    "2:00 AM",
+                    "2:30 AM",
+                    "3:00 AM",
+                    "3:30 AM",
+                    "4:00 AM",
+                    "4:30 AM",
+                    "5:00 AM",
+                    "5:30 AM",
+                    "6:00 AM",
+                    "6:30 AM",
+                    "7:00 AM",
+                    "7:30 AM",
+                    "8:00 AM",
+                    "8:30 AM",
+                    "9:00 AM",
+                    "9:30 AM",
+                    "10:00 AM",
+                    "10:30 AM",
+                    "11:00 AM",
+                    "11:30 AM",
+                    "12:00 PM",
+                    "12:30 PM",
+                    "1:00 PM",
+                    "1:30 PM",
+                    "2:00 PM",
+                    "2:30 PM",
+                    "3:00 PM",
+                    "3:30 PM",
+                    "4:00 PM",
+                    "4:30 PM",
+                    "5:00 PM",
+                    "5:30 PM",
+                    "6:00 PM",
+                    "6:30 PM",
+                    "7:00 PM",
+                    "7:30 PM",
+                    "8:00 PM",
+                    "8:30 PM",
+                    "9:00 PM",
+                    "9:30 PM",
+                    "10:00 PM",
+                    "10:30 PM",
+                    "11:00 PM",
+                    "11:30 PM"
+                ]
+            },
+            {
+                "name": "Alarm Sound Preference",
+                "description": "The type of sound the user prefers for their alarms.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "gentle nature",
+                    "loud beeping",
+                    "upbeat music",
+                    "gradual increase"
+                ]
+            },
+            {
+                "name": "Alarm Recurring Preference",
+                "description": "User's preference for how often the alarm should repeat.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "weekdays",
+                    "weekends",
+                    "everyday"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Books",
+        "description": "Explore a wide variety of books, play them, and get recommendations based on user preferences.",
+        "tasks": [
+            {
+                "name": "LookupBook",
+                "description": "Search for a specific book in the database."
+            },
+            {
+                "name": "PlayBook",
+                "description": "Listen to or read the selected book."
+            },
+            {
+                "name": "GetBookRecommendation",
+                "description": "Receive book recommendations tailored to user preferences."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Genre",
+                "description": "Preferred genres of books the user enjoys.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "science-fiction",
+                    "biography",
+                    "non-fiction",
+                    "fiction",
+                    "romance",
+                    "thriller",
+                    "fantasy",
+                    "true crime",
+                    "history",
+                    "children",
+                    "young adult"
+                ]
+            },
+            {
+                "name": "Favourite Authors",
+                "description": "Authors that the user particularly enjoys.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "J.K. Rowling",
+                    "Stephen King"
+                ]
+            },
+            {
+                "name": "Favourite Books",
+                "description": "Books that the user loves.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "The Great Gatsby"
+                ]
+            },
+            {
+                "name": "Favourite Book Series",
+                "description": "Book series that the user enjoys.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Harry Potter"
+                ]
+            },
+            {
+                "name": "Reading Format",
+                "description": "Preferred format for reading books.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "physical",
+                    "ebook",
+                    "audiobook"
+                ]
+            },
+            {
+                "name": "Reading Time Preference",
+                "description": "Preferred time of day for reading.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "morning",
+                    "afternoon",
+                    "evening"
+                ]
+            },
+            {
+                "name": "Reading Frequency",
+                "description": "How often the user reads books.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "daily",
+                    "weekly",
+                    "monthly",
+                    "occasionally"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Buses",
+        "description": "Manage bus travel by finding buses and purchasing tickets easily.",
+        "tasks": [
+            {
+                "name": "FindBus",
+                "description": "Search for available bus routes and schedules." 
+            },
+            {
+                "name": "BuyBusTicket",
+                "description": "Purchase tickets for selected bus routes."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Bus Company",
+                "description": "Bus companies that the user prefers to travel with.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Megabus",
+                    "Flixbus",
+                    "National Express",
+                    "Greyhound"
+                ]
+            },
+            {
+                "name": "Travel Frequency",
+                "description": "How often the user travels by bus.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "daily",
+                    "weekly",
+                    "monthly",
+                    "occasionally"
+                ]
+            },
+            {
+                "name": "Seat Preference",
+                "description": "User's preferred seat type when traveling by bus.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "window",
+                    "aisle",
+                    "no preference"
+                ]
+            },
+            {
+                "name": "Departure Time Preference",
+                "description": "Preferred time of day for bus departures.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "morning",
+                    "afternoon",
+                    "night",
+                    "no preference"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Calendar",
+        "description": "Manage events and schedules by adding, retrieving, and setting event details.",
+        "tasks": [
+            {
+                "name": "GetEvents",
+                "description": "Retrieve events from the calendar." 
+            },
+            {
+                "name": "GetAvailableTime",
+                "description": "Find available time slots in the calendar."
+            },
+            {
+                "name": "AddEvent",
+                "description": "Add a new event to the calendar."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Event Type Preference",
+                "description": "Types of events the user prefers to schedule.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "meeting",
+                    "work",
+                    "birthday"
+                ]
+            },
+            {
+                "name": "Notification Preference",
+                "description": "Preferred notification times before an event starts.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "15 minutes before",
+                    "30 minutes before",
+                    "1 day before"
+                ]
+            },
+            {
+                "name": "Timezone",
+                "description": "Preferred timezone for scheduling events.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "UTC-12",
+                    "UTC-11",
+                    "UTC-10",
+                    "UTC-9",
+                    "UTC-8",
+                    "UTC-7",
+                    "UTC-6",
+                    "UTC-5",
+                    "UTC-4",
+                    "UTC-3",
+                    "UTC-2",
+                    "UTC-1",
+                    "UTC+0",
+                    "UTC+1",
+                    "UTC+2",
+                    "UTC+3",
+                    "UTC+4",
+                    "UTC+5",
+                    "UTC+6",
+                    "UTC+7",
+                    "UTC+8",
+                    "UTC+9",
+                    "UTC+10",
+                    "UTC+11",
+                    "UTC+12"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Events",
+        "description": "Discover, purchase tickets, and get recommendations for various events.",
+        "tasks": [
+            {
+                "name": "FindEvents",
+                "description": "Search for events based on user preferences and availability."
+            },
+            {
+                "name": "BuyEventTickets",
+                "description": "Purchase tickets for a specific event."
+            },
+            {
+                "name": "GetEventDates",
+                "description": "Retrieve available dates for events."
+            },
+            {
+                "name": "GetEventRecommendation",
+                "description": "Get personalized event recommendations based on preferences."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Event Type Preference",
+                "description": "Preferred types of events to attend.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "concerts",
+                    "sports",
+                    "theater",
+                    "musical",
+                    "comedy shows",
+                    "festivals",
+                    "conferences",
+                    "art exhibitions",
+                    "networking events",
+                    "food and drink tastings",
+                    "film screenings",
+                    "opera",
+                    "ballet",
+                    "stand-up comedy",
+                    "charity events",
+                    "book readings",
+                    "fashion shows",
+                    "trade shows",
+                    "science fairs",
+                    "historical reenactments",
+                    "circus",
+                    "cultural celebrations",
+                    "community fairs",
+                    "lectures",
+                    "poetry slams",
+                    "dance performances",
+                    "gaming conventions",
+                    "live podcasts",
+                    "workshops",
+                    "panel discussions",
+                    "author talks",
+                    "startup pitches"
+                ]
+            },
+            {
+                "name": "Price Range",
+                "description": "Preferred price range for event tickets.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "free",
+                    "under $50",
+                    "$50-$100",
+                    "$100+"
+                ]
+            },
+            {
+                "name": "Group Size Preference",
+                "description": "Preferred group size for attending events.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "solo",
+                    "pair",
+                    "small group",
+                    "large group"
+                ]
+            },
+            {
+                "name": "Seating Preference",
+                "description": "Preferred seating option for events.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "standing",
+                    "general admission",
+                    "VIP"
+                ]
+            },
+            {
+                "name": "Days of Week Preference",
+                "description": "Preferred days of the week to attend events.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "monday",
+                    "tuesday",
+                    "wendesday",
+                    "thursday",
+                    "friday",
+                    "saturday",
+                    "sunday",
+                    "weekdays",
+                    "weekends",
+                    "no preference"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Finance",
+        "description": "Manage and track stock prices and news updates for various financial sectors.",
+        "tasks": [
+            {
+                "name": "GetStockPrice",
+                "description": "Retrieve the current stock price of a specific company."
+            },
+            {
+                "name": "GetStockNews",
+                "description": "Get the latest news and updates about a specific stock or sector."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Sectors",
+                "description": "Preferred sectors to focus on for stock investments.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "technology",
+                    "finance",
+                    "consumer goods",
+                    "healthcare",
+                    "energy",
+                    "real estate",
+                    "utilities",
+                    "telecommunications",
+                    "industrial",
+                    "materials"
+                ]
+            },
+            {
+                "name": "News Sources",
+                "description": "Preferred sources of news for financial updates.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "financial websites",
+                    "social media",
+                    "company reports",
+                    "professional analyses",
+                    "financial news channels",
+                    "podcasts",
+                    "news aggregators",
+                    "investment newsletters",
+                    "industry publications",
+                    "blogs",
+                    "government reports",
+                    "academic journals",
+                    "email alerts",
+                    "financial apps"
+                ]
+            },
+            {
+                "name": "Financial Company",
+                "description": "Companies of interest for financial investments.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Amazon",
+                    "Apple",
+                    "Google"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Flights",
+        "description": "Search for, reserve, and manage one-way and roundtrip flight bookings.",
+        "tasks": [
+            {
+                "name": "ReserveOnewayFlight",
+                "description": "Reserve a one-way flight to a specific destination."
+            },
+            {
+                "name": "ReserveRoundtripFlights",
+                "description": "Reserve roundtrip flights to a specific destination and return."
+            },
+            {
+                "name": "SearchOnewayFlight",
+                "description": "Search for available one-way flights."
+            },
+            {
+                "name": "SearchRoundtripFlights",
+                "description": "Search for available roundtrip flights."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Airline",
+                "description": "Preferred airline companies for flights.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Delta Airlines",
+                    "United Airlines",
+                    "British Airways",
+                    "Qatar Airways",
+                    "Singapore Airlines",
+                    "Emirates",
+                    "RyanAir",
+                    "EasyJet",
+                    "Air Canada",
+                    "Air China",
+                    "KLM",
+                    "Turkish Airlines",
+                    "ANA All Nippon Airways",
+                    "Cathay Pacific Airways",
+                    "Japan Airlines",
+                    "American Airlines",
+                    "Southwest Airlines",
+                    "Lufthansa",
+                    "Air France",
+                    "Etihad Airways",
+                    "Iberia",
+                    "Qantas",
+                    "JetBlue",
+                    "Spirit Airlines",
+                    "Vueling",
+                    "Swiss International Air Lines",
+                    "Thai Airways",
+                    "Virgin Atlantic",
+                    "Aer Lingus",
+                    "Alaska Airlines",
+                    "LATAM Airlines",
+                    "China Eastern Airlines",
+                    "EgyptAir",
+                    "Avianca",
+                    "Korean Air",
+                    "Asiana Airlines",
+                    "Malaysia Airlines",
+                    "Scandinavian Airlines (SAS)"
+                ]
+            },
+            {
+                "name": "Seat Class Preference",
+                "description": "Preferred seating class for flights.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "economy",
+                    "premium economy",
+                    "business",
+                    "first"
+                ]
+            },
+            {
+                "name": "Layover Preference",
+                "description": "Preferred type of layover when traveling.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "non-stop",
+                    "short layover",
+                    "long layover"
+                ]
+            },
+            {
+                "name": "Seat Preference",
+                "description": "Preferred seat when flying.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "window",
+                    "aisle",
+                    "no preference"
+                ]
+            },
+            {
+                "name": "Departure Time Preference",
+                "description": "Preferred time of day for flight departures.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "morning",
+                    "afternoon",
+                    "evening"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Games",
+        "description": "Search, buy, rent, and get recommendations for various video games across different platforms.",
+        "tasks": [
+            {
+                "name": "LookupGame",
+                "description": "Search for information about a specific game."
+            },
+            {
+                "name": "BuyGame",
+                "description": "Purchase a video game for a chosen platform."
+            },
+            {
+                "name": "RentGame",
+                "description": "Rent a video game for a limited time."
+            },
+            {
+                "name": "GetGameRecommendation",
+                "description": "Receive personalized game recommendations based on user preferences."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Game Genres",
+                "description": "Favorite genres of games to play.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "RPG",
+                    "FPS",
+                    "strategy",
+                    "sports",
+                    "puzzle",
+                    "adventure",
+                    "simulation",
+                    "action",
+                    "MOBA",
+                    "MMORPG",
+                    "horror",
+                    "sandbox",
+                    "racing",
+                    "fighting",
+                    "survival",
+                    "idle",
+                    "platformer",
+                    "card games",
+                    "board games",
+                    "battle royale",
+                    "party games",
+                    "rhythm",
+                    "educational",
+                    "stealth",
+                    "roguelike",
+                    "visual novel",
+                    "point-and-click",
+                    "metroidvania",
+                    "tower defense",
+                    "deck-building"
+                ]
+            },
+            {
+                "name": "Gaming Platforms",
+                "description": "Preferred platforms for gaming.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "PC",
+                    "mobile",
+                    "Xbox",
+                    "PlayStation",
+                    "Nintendo Switch"
+                ]
+            },
+            {
+                "name": "Multiplayer Preference",
+                "description": "Preferred type of multiplayer experience.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "single player",
+                    "local multiplayer",
+                    "online multiplayer"
+                ]
+            },
+            {
+                "name": "Gaming Frequency",
+                "description": "How often the user plays video games.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "daily",
+                    "weekly",
+                    "weekends only",
+                    "occasionally"
+                ]
+            },
+            {
+                "name": "Preferred Game Name",
+                "description": "Names of favorite video games.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Minecraft",
+                    "Grand Theft Auto V"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Hotels",
+        "description": "Search for and reserve hotel rooms with preferences for hotel chains, amenities, and room types.",
+        "tasks": [
+            {
+                "name": "ReserveHotel",
+                "description": "Reserve a hotel room at a preferred hotel chain or location."
+            },
+            {
+                "name": "SearchHotel",
+                "description": "Search for available hotels based on user preferences and location."
+            },
+            {
+                "name": "GetHotelRecommendation",
+                "description": "Receive personalized hotel recommendations based on user preferences."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Hotel Chains Preference",
+                "description": "Preferred hotel chains for stays.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Marriott",
+                    "Hilton",
+                    "IHG",
+                    "Accor",
+                    "Best Western",
+                    "Hyatt",
+                    "boutique",
+                    "budget",
+                    "Radisson",
+                    "Holiday Inn",
+                    "Intercontinental"
+                ]
+            },
+            {
+                "name": "Amenity Preference",
+                "description": "Preferred amenities when staying at a hotel.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "pool",
+                    "gym",
+                    "spa",
+                    "WiFi",
+                    "free breakfast",
+                    "24-hour front desk",
+                    "room service",
+                    "pet-friendly policies",
+                    "conference facilities",
+                    "laundry services",
+                    "airport shuttle",
+                    "business center",
+                    "free parking",
+                    "on-site restaurant",
+                    "bar/lounge",
+                    "mini-bar",
+                    "in-room safe",
+                    "kitchenette",
+                    "balcony",
+                    "hot tub",
+                    "sauna",
+                    "fitness classes",
+                    "childcare services",
+                    "event space",
+                    "self-service laundry",
+                    "valet parking",
+                    "non-smoking rooms",
+                    "gift shop",
+                    "electric vehicle charging stations",
+                    "game room"
+                ]
+            },
+            {
+                "name": "Location Preference",
+                "description": "Preferred location of the hotel.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "city center",
+                    "beachfront",
+                    "airport proximity",
+                    "suburban area",
+                    "mountain view",
+                    "countryside",
+                    "downtown",
+                    "historic district",
+                    "near tourist attractions",
+                    "business district",
+                    "lakefront",
+                    "national park access",
+                    "quiet residential area",
+                    "ski resort",
+                    "near public transport",
+                    "coastal area",
+                    "rural retreat",
+                    "near shopping districts",
+                    "near cultural landmarks",
+                    "along a river",
+                    "in a theme park",
+                    "golf course nearby",
+                    "wellness retreat area",
+                    "near local markets",
+                    "urban waterfront",
+                    "within walking distance of nightlife",
+                    "near hiking trails",
+                    "near hospitals or medical centers",
+                    "near universities or colleges"
+                ]
+            },
+            {
+                "name": "Star Rating Preference",
+                "description": "Preferred star rating of the hotel.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "3 star",
+                    "4 star",
+                    "5 star",
+                    "no preference"
+                ]
+            },
+            {
+                "name": "Room Type Preference",
+                "description": "Preferred room type during the stay.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "single",
+                    "double",
+                    "deluxe",
+                    "suite"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Media",
+        "description": "Search for, play, rent, or get recommendations for TV shows and movies across various platforms.",
+        "tasks": [
+            {
+                "name": "FindMedia",
+                "description": "Search for TV shows or movies based on user preferences or queries."
+            },
+            {
+                "name": "PlayMedia",
+                "description": "Play selected TV shows or movies on the preferred platform."
+            },
+            {
+                "name": "RentMedia",
+                "description": "Rent movies or TV shows for a specified time."
+            },
+            {
+                "name": "GetMediaRecommendation",
+                "description": "Get personalized TV show and movie recommendations based on user preferences."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Genres",
+                "description": "Preferred genres for TV shows and movies.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "drama",
+                    "comedy",
+                    "sci-fi",
+                    "documentary",
+                    "reality",
+                    "horror",
+                    "action",
+                    "romance",
+                    "thriller",
+                    "fantasy",
+                    "mystery",
+                    "adventure",
+                    "animation",
+                    "family",
+                    "historical",
+                    "musical",
+                    "sports",
+                    "biography",
+                    "superhero",
+                    "Western",
+                    "crime",
+                    "war",
+                    "psychological",
+                    "coming-of-age",
+                    "period drama",
+                    "game show",
+                    "talk show",
+                    "cooking show",
+                    "variety show",
+                    "anthology",
+                    "silent film",
+                    "independent",
+                    "foreign film",
+                    "historical fiction"
+                ]
+            },
+            {
+                "name": "Favourite Actors and Directors",
+                "description": "Preferred actors and directors for TV shows and movies.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Tom Hanks",
+                    "Christopher Nolan"
+                ]
+            },
+            {
+                "name": "Favourite Media",
+                "description": "Favorite TV shows or movies.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Inception",
+                    "Friends"
+                ]
+            },
+            {
+                "name": "Viewing Platform Preference",
+                "description": "Preferred platforms for watching TV shows and movies.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Netflix",
+                    "Hulu",
+                    "Amazon Prime",
+                    "Disney+",
+                    "Apple TV",
+                    "HBO Max",
+                    "Paramount+",
+                    "YouTube",
+                    "Google Play Movies",
+                    "FuboTV",
+                    "Showtime",
+                    "BBC iPlayer",
+                    "Acorn TV",
+                    "Kanopy",
+                    "Twitch",
+                    "Roku Channel"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Messaging",
+        "description": "Send messages or share location using preferred messaging apps and communication styles.",
+        "tasks": [
+            {
+                "name": "SendMessage",
+                "description": "Send messages to contacts using the preferred messaging app."
+            },
+            {
+                "name": "ShareLocation",
+                "description": "Share your current location with contacts through messaging apps."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Messaging Apps",
+                "description": "Preferred messaging apps for communication.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "WhatsApp",
+                    "iMessage",
+                    "Telegram",
+                    "Facebook Messenger",
+                    "SMS",
+                    "WeChat",
+                    "Slack",
+                    "Microsoft Teams",
+                    "Discord",
+                    "Google Chat",
+                    "Line",
+                    "Kik",
+                    "Snapchat",
+                    "Skype"
+                ]
+            },
+            {
+                "name": "Communication Style",
+                "description": "Preferred style of communication (text, voice, video).",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "text",
+                    "voice messages",
+                    "voice calls",
+                    "video calls"
+                ]
+            },
+            {
+                "name": "Frequent Contact",
+                "description": "Most frequently contacted groups of people.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "family",
+                    "friends",
+                    "coworkers"
+                ]
+            },
+            {
+                "name": "Preferred Communication Style",
+                "description": "Preferred tone of communication when messaging.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "casual",
+                    "formal",
+                    "friendly",
+                    "professional",
+                    "concise",
+                    "detailed",
+                    "humorous",
+                    "empathetic",
+                    "direct",
+                    "polite",
+                    "informal",
+                    "assertive",
+                    "laid-back",
+                    "persuasive",
+                    "sympathetic",
+                    "playful",
+                    "reserved",
+                    "warm",
+                    "neutral",
+                    "affectionate",
+                    "businesslike"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Movies",
+        "description": "Browse, purchase, and receive recommendations for movies available in theaters.",
+        "tasks": [
+            {
+                "name": "BuyMovieTickets",
+                "description": "Purchase tickets for a selected movie at the preferred theater."
+            },
+            {
+                "name": "FindMovies",
+                "description": "Search for available movies based on user preferences or current listings."
+            },
+            {
+                "name": "GetTimesForMovie",
+                "description": "Retrieve showtimes for a selected movie at the chosen theater."
+            },
+            {
+                "name": "GetMovieRecommendation",
+                "description": "Receive personalized movie recommendations based on user preferences."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Genres",
+                "description": "Genres of movies the user enjoys watching.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "action",
+                    "science-fiction",
+                    "musical",
+                    "comedy",
+                    "horror",
+                    "drama",
+                    "history",
+                    "children's film",
+                    "anime",
+                    "epic",
+                    "mystery",
+                    "documentary",
+                    "fantasy",
+                    "romance",
+                    "thriller",
+                    "adventure",
+                    "crime",
+                    "biography",
+                    "sports",
+                    "superhero",
+                    "Western",
+                    "psychological",
+                    "war",
+                    "historical fiction",
+                    "romantic comedy",
+                    "family",
+                    "independent",
+                    "foreign film"
+                ]
+            },
+            {
+                "name": "Favorite Actors and Directors",
+                "description": "Actors and directors the user particularly enjoys.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Leonardo DiCaprio"
+                ]
+            },
+            {
+                "name": "Theater Type Preference",
+                "description": "Preferred types of theaters for watching movies.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "standard",
+                    "IMAX",
+                    "3D",
+                    "drive-in",
+                    "open-air cinema"
+                ]
+            },
+            {
+                "name": "Viewing Time Preference",
+                "description": "Preferred times to watch movies.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "matinee",
+                    "evening",
+                    "late night",
+                    "weekends only",
+                    "weekday evenings",
+                    "afternoons",
+                    "mornings",
+                    "after work",
+                    "family movie night",
+                    "holidays",
+                    "midday",
+                    "late afternoon",
+                    "early evenings",
+                    "all day on weekends",
+                    "random weeknights",
+                    "seasonal viewing",
+                    "special occasions",
+                    "during meal times",
+                    "whenever free",
+                    "during vacations",
+                    "before bed"
+                ]
+            },
+            {
+                "name": "Seat Type Preference",
+                "description": "Preferred seating options in the theater.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "middle row",
+                    "back row",
+                    "front row",
+                    "center",
+                    "aisle",
+                    "corner seats",
+                    "reclining seats",
+                    "VIP seating",
+                    "single seat",
+                    "double seat",
+                    "sofa seating",
+                    "row with extra legroom",
+                    "higher tier seating",
+                    "accessible seating",
+                    "lower level seating",
+                    "balcony seating",
+                    "box seats",
+                    "back corner seats",
+                    "no preference"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Music",
+        "description": "Discover, play, and receive recommendations for songs and albums.",
+        "tasks": [
+            {
+                "name": "LookupSong",
+                "description": "Search for a song by title, artist, or album."
+            },
+            {
+                "name": "PlaySong",
+                "description": "Play a selected song from the user's preferred music platform."
+            },
+            {
+                "name": "GetMusicRecommendation",
+                "description": "Receive personalized music recommendations based on user preferences."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Genres",
+                "description": "Genres of music the user enjoys listening to.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "pop",
+                    "rock",
+                    "hip-hop",
+                    "jazz",
+                    "blues",
+                    "country",
+                    "world",
+                    "folk",
+                    "funk",
+                    "disco",
+                    "classical",
+                    "electronic",
+                    "reggae",
+                    "metal",
+                    "punk",
+                    "R&B",
+                    "soul",
+                    "dance",
+                    "hard rock",
+                    "Latin",
+                    "K-pop",
+                    "J-pop",
+                    "ambient",
+                    "instrumental",
+                    "house",
+                    "techno",
+                    "acoustic"
+                ]
+            },
+            {
+                "name": "Favorite Artists",
+                "description": "Artists the user particularly enjoys.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Taylor Swift",
+                    "Ed Sheeran"
+                ]
+            },
+            {
+                "name": "Favorite Bands",
+                "description": "Bands the user enjoys listening to.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "The Beatles",
+                    "Coldplay"
+                ]
+            },
+            {
+                "name": "Favorite Albums",
+                "description": "Albums that the user loves.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Moon Music",
+                    "Music of the Spheres"
+                ]
+            },
+            {
+                "name": "Platform Preference",
+                "description": "Preferred platforms for listening to music.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Spotify",
+                    "Apple Music",
+                    "YouTube Music",
+                    "Amazon Music",
+                    "Tidal",
+                    "Deezer",
+                    "Pandora",
+                    "SoundCloud",
+                    "iHeartRadio",
+                    "Google Play Music",
+                    "Tencent Music",
+                    "Audible"
+                ]
+            },
+            {
+                "name": "Preferred Audio Quality",
+                "description": "Desired audio quality for music playback.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "high definition",
+                    "standard",
+                    "lossless"
+                ]
+            },
+            {
+                "name": "Playlist Preference",
+                "description": "Types of playlists the user enjoys listening to.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "workout",
+                    "relaxation"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Rental Cars",
+        "description": "Search for and reserve rental cars based on user preferences.",
+        "tasks": [
+            {
+                "name": "GetCarsAvailable",
+                "description": "Retrieve a list of available rental cars based on user specifications."
+            },
+            {
+                "name": "ReserveCar",
+                "description": "Book a selected rental car for the desired duration."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Car Type Preference",
+                "description": "Types of cars preferred by the user for rental.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "SUV",
+                    "economy",
+                    "intermediate",
+                    "premium",
+                    "minivan",
+                    "convertible",
+                    "luxury",
+                    "compact"
+                ]
+            },
+            {
+                "name": "Preferred Rental Company",
+                "description": "Rental companies that the user prefers for car rentals.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Enterprise",
+                    "Hertz",
+                    "Avis",
+                    "Europcar",
+                    "Sixt",
+                    "Budget",
+                    "Alamo",
+                    "Thrifty",
+                    "Dollar",
+                    "Payless",
+                    "Trafalgar",
+                    "Green Motion",
+                    "Firefly",
+                    "Sixt",
+                    "CarTrawler",
+                    "Zipcar",
+                    "U-Haul"
+                ]
+            },
+            {
+                "name": "Preferred Car Brand",
+                "description": "Car brands that the user prefers when renting a car.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "BMW",
+                    "Audi",
+                    "Buick",
+                    "Acura",
+                    "Honda",
+                    "Lexus",
+                    "KIA",
+                    "FIAT",
+                    "Ford",
+                    "Jaguar",
+                    "Tesla",
+                    "Toyota",
+                    "Volkswagen",
+                    "Mercedes-Benz",
+                    "Porsche",
+                    "Nissan",
+                    "Chevrolet",
+                    "Subaru",
+                    "Hyundai",
+                    "Mazda",
+                    "Chrysler",
+                    "Land Rover",
+                    "Mitsubishi",
+                    "Infiniti",
+                    "Dodge",
+                    "Volvo",
+                    "Mini",
+                    "Bentley",
+                    "Rolls-Royce",
+                    "Maserati",
+                    "Alfa Romeo",
+                    "Peugeot",
+                    "Renault",
+                    "Opel",
+                    "Skoda",
+                    "Genesis",
+                    "Smart"
+                ]
+            },
+            {
+                "name": "Rental Duration Preference",
+                "description": "Preferred duration for renting a car.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "1-2 days",
+                    "3-7 days",
+                    "1-2 weeks",
+                    "3-4 weeks",
+                    "1 month+"
+                ]
+            },
+            {
+                "name": "Additional Feature Preference",
+                "description": "Additional features the user wants when renting a car.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "GPS",
+                    "ski rack",
+                    "additional driver",
+                    "child seat",
+                    "navigation",
+                    "sunroof",
+                    "all-wheel drive",
+                    "roadside assistance",
+                    "luggage rack"
+                ]
+            },
+            {
+                "name": "Preferred Fuel Type",
+                "description": "Type of fuel preferred by the user for rental cars.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "electric",
+                    "gasoline",
+                    "diesel"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Restaurants",
+        "description": "Discover and reserve restaurants based on user preferences and dietary needs.",
+        "tasks": [
+            {
+                "name": "FindRestaurants",
+                "description": "Search for restaurants based on cuisine, location, and user preferences."
+            },
+            {
+                "name": "ReserveRestaurant",
+                "description": "Make a reservation at a selected restaurant for a specified date and time."
+            },
+            {
+                "name": "GetRestaurantRecommendation",
+                "description": "Get personalized restaurant recommendations based on user preferences."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Cuisine Preference",
+                "description": "Preferred types of cuisine when dining out.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Italian",
+                    "Chinese",
+                    "Mexican",
+                    "fusion",
+                    "British",
+                    "French",
+                    "American",
+                    "Japanese",
+                    "Spanish",
+                    "Korean",
+                    "Thai",
+                    "Indian",
+                    "Turkish",
+                    "African",
+                    "Mediterranean",
+                    "Vietnamese",
+                    "Lebanese",
+                    "Greek",
+                    "Caribbean",
+                    "Peruvian",
+                    "Cuban",
+                    "Russian",
+                    "Moroccan",
+                    "Pakistani",
+                    "Bangladeshi"
+                ]
+            },
+            {
+                "name": "Dietary Restrictions",
+                "description": "Dietary needs or restrictions that should be considered when choosing a restaurant.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "vegan",
+                    "gluten-free",
+                    "nut allergy",
+                    "shellfish allergy",
+                    "eggs allergy",
+                    "dairy-free",
+                    "vegetarian",
+                    "kosher",
+                    "keto"
+                ]
+            },
+            {
+                "name": "Ambiance Preference",
+                "description": "Preferred dining atmosphere or setting.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "casual",
+                    "fine dining",
+                    "outdoor seating",
+                    "quiet"
+                ]
+            },
+            {
+                "name": "Price Range",
+                "description": "Price category that the user is willing to consider for dining.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "budget-friendly",
+                    "moderate",
+                    "upscale",
+                    "luxury"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Services",
+        "description": "Find and book appointments with service providers like salons, dentists, and doctors based on user preferences.",
+        "tasks": [
+            {
+                "name": "BookAppointment",
+                "description": "Schedule an appointment with a chosen service provider."
+            },
+            {
+                "name": "FindProvider",
+                "description": "Search for service providers based on type, location, and user preferences."
+            },
+            {
+                "name": "GetRecommendation",
+                "description": "Receive recommendations for service providers based on user needs and ratings."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Service Provider Types",
+                "description": "Types of service providers that the user prefers.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "budget",
+                    "local",
+                    "chain",
+                    "high-end",
+                    "24/7 service"
+                ]
+            },
+            {
+                "name": "Appointment Time Preference",
+                "description": "Preferred times of day for scheduling appointments.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "morning",
+                    "afternoon",
+                    "evening"
+                ]
+            },
+            {
+                "name": "Location Preference",
+                "description": "Preferred locations for service providers relative to the user's daily routine.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "near work",
+                    "near home"
+                ]
+            },
+            {
+                "name": "Service Frequency Preference",
+                "description": "How often the user prefers to use services.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "one-off",
+                    "weekly",
+                    "monthly",
+                    "quarterly",
+                    "yearly"
+                ]
+            },
+            {
+                "name": "Service Provider Gender Preference",
+                "description": "Preferred gender of the service provider.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "female",
+                    "male",
+                    "no preference"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Shopping",
+        "description": "Search for products, get recommendations, and view product details based on user preferences.",
+        "tasks": [
+            {
+                "name": "SearchProduct",
+                "description": "Look for specific products based on user queries and filters."
+            },
+            {
+                "name": "GetRecommendation",
+                "description": "Receive personalized product recommendations based on user preferences."
+            },
+            {
+                "name": "GetProductDetail",
+                "description": "View detailed information about a specific product."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Product Category",
+                "description": "Categories of products that the user is interested in.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "clothing",
+                    "electronics",
+                    "beauty",
+                    "home goods",
+                    "pets",
+                    "grocery",
+                    "children",
+                    "office",
+                    "sports",
+                    "books",
+                    "health & wellness",
+                    "furniture",
+                    "toys",
+                    "automotive",
+                    "outdoor & camping",
+                    "kitchenware",
+                    "jewelry",
+                    "fashion accessories",
+                    "musical instruments",
+                    "gardening supplies",
+                    "fitness equipment"
+                ]
+            },
+            {
+                "name": "Price Range Preference",
+                "description": "User's budget preference for shopping.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "budget",
+                    "mid-range",
+                    "luxury"
+                ]
+            },
+            {
+                "name": "Brand Preference",
+                "description": "Brands that the user prefers when shopping.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Apple",
+                    "Nike"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Sports",
+        "description": "Access live scores, match schedules, and statistics for teams and players based on user preferences.",
+        "tasks": [
+            {
+                "name": "GetLiveScore",
+                "description": "Retrieve the current scores of live sporting events."
+            },
+            {
+                "name": "GetMatchSchedule",
+                "description": "View the upcoming matches and their schedules."
+            },
+            {
+                "name": "GetTeamStats",
+                "description": "Access statistics for specific sports teams."
+            },
+            {
+                "name": "GetPlayerStats",
+                "description": "Access statistics for individual players."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Favorite Sports",
+                "description": "Sports that the user enjoys watching or following.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "football",
+                    "basketball",
+                    "tennis",
+                    "baseball",
+                    "table tennis",
+                    "badminton",
+                    "swimming",
+                    "soccer",
+                    "hockey",
+                    "golf",
+                    "cricket",
+                    "rugby",
+                    "volleyball",
+                    "motorsports",
+                    "boxing",
+                    "mixed martial arts",
+                    "gymnastics",
+                    "cycling",
+                    "track and field",
+                    "wrestling",
+                    "ice skating",
+                    "field hockey",
+                    "water polo",
+                    "lacrosse",
+                    "handball",
+                    "darts",
+                    "snooker",
+                    "fencing",
+                    "eSports",
+                    "ultimate frisbee",
+                    "surfing",
+                    "rock climbing",
+                    "skateboarding",
+                    "snowboarding",
+                    "paragliding"
+                ]
+            },
+            {
+                "name": "Favorite Team",
+                "description": "Teams that the user supports.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Lakers",
+                    "Yankees"
+                ]
+            },
+            {
+                "name": "Viewing Preference",
+                "description": "User's preference for how they like to view sports content.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "live",
+                    "highlights",
+                    "full games",
+                    "replays",
+                    "in-depth analysis",
+                    "post-game commentary",
+                    "behind-the-scenes content",
+                    "player interviews",
+                    "documentaries",
+                    "sports news",
+                    "interactive coverage",
+                    "social media updates",
+                    "webcasts",
+                    "fan events",
+                    "event previews",
+                    "sports podcasts"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Train",
+        "description": "Book and manage train journeys, including finding trains and purchasing tickets, while catering to user preferences.",
+        "tasks": [
+            {
+                "name": "FindTrains",
+                "description": "Search for available trains based on user input for destination and travel date."
+            },
+            {
+                "name": "GetTrainTickets",
+                "description": "Purchase tickets for selected train journeys."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Train Class",
+                "description": "The class of travel that the user prefers when taking a train.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "first class",
+                    "standard class"
+                ]
+            },
+            {
+                "name": "Travel Time Preference",
+                "description": "Preferred time of day for travel.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "morning",
+                    "afternoon",
+                    "evening"
+                ]
+            },
+            {
+                "name": "Amenity Preference",
+                "description": "Preferred amenities available on the train.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "WiFi",
+                    "quiet coach",
+                    "power outlet",
+                    "table"
+                ]
+            },
+            {
+                "name": "Preferred Seat Type",
+                "description": "The type of seat the user prefers when traveling by train.",
+                "is_categorical": true,
+                "has_multiple_values": false,
+                "possible_values": [
+                    "aisle",
+                    "window",
+                    "no preference"
+                ]
+            }
+        ]
+    },
+    {
+        "domain": "Travel",
+        "description": "Explore and discover attractions at various destinations, and receive recommendations based on user preferences.",
+        "tasks": [
+            {
+                "name": "FindAttractions",
+                "description": "Search for popular attractions based on the user’s selected destination."
+            },
+            {
+                "name": "GetAttractionRecommendation",
+                "description": "Receive tailored recommendations for attractions based on user preferences and interests."
+            }
+        ],
+        "affinities": [
+            {
+                "name": "Preferred Destination Types",
+                "description": "Types of destinations the user prefers to visit.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "beach",
+                    "city",
+                    "mountain",
+                    "cultural",
+                    "historical",
+                    "rural",
+                    "adventure",
+                    "wildlife",
+                    "island",
+                    "desert",
+                    "spa and wellness",
+                    "family-friendly",
+                    "food and wine",
+                    "sports and activities",
+                    "road trip",
+                    "urban exploration",
+                    "scenic",
+                    "countryside",
+                    "heritage",
+                    "cruise",
+                    "wellness retreat",
+                    "photography",
+                    "beach resort",
+                    "ski resort",
+                    "national park",
+                    "themed parks"
+                ]
+            },
+            {
+                "name": "Duration Preference",
+                "description": "The preferred duration of travel for the user.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "1-2 days",
+                    "3-7 days",
+                    "1-2 weeks",
+                    "3-4 weeks",
+                    "1 month+"
+                ]
+            },
+            {
+                "name": "Group Size Preference",
+                "description": "The size of the group the user typically travels with.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "solo",
+                    "couple",
+                    "family",
+                    "large group"
+                ]
+            },
+            {
+                "name": "Frequent Travel Destination",
+                "description": "Destinations the user frequently visits.",
+                "is_categorical": false,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "London",
+                    "Paris"
+                ]
+            },
+            {
+                "name": "Travel Season Preference",
+                "description": "The season in which the user prefers to travel.",
+                "is_categorical": true,
+                "has_multiple_values": true,
+                "possible_values": [
+                    "Spring",
+                    "Summer",
+                    "Fall",
+                    "Winter"
+                ]
+            }
+        ]
+    }
+]
