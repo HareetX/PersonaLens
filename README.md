@@ -42,6 +42,7 @@ Ensure you have Python 3.11+ installed. Install dependencies using:
 ```bash
 pip install -r requirements.txt
 ```
+You also need to use Amazon Bedrock in order to run the code. Please refer to the [Amazon Bedrock documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) for setup instructions. And please make sure you have the necessary permissions to access the models used in this benchmark.
 
 ## Usage
 ### 1. Dialogue Generation
